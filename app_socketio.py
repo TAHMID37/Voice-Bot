@@ -160,6 +160,7 @@ def initialize_deepgram_connection():
             # ans=bot(transcript)
             ans=lm_processor.process(transcript)
             print(ans)
+            socketio.emit('tts_update', {'response': ans})
             audio_file_path = synthesize_audio(ans, "aura-asteria-en")  # Nova-2 is the TTS model
             socketio.emit('tts_audio', {'audio_url': f"/static/audio/{os.path.basename(audio_file_path)}"})
 

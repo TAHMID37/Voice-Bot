@@ -89,6 +89,10 @@ socket.on("transcription_update", (data) => {
   document.getElementById("captions").innerHTML = data.transcription;
 });
 
+socket.on("tts_update", (data) => {
+  document.getElementById("answers").innerHTML = data.response;
+});
+
 socket.on("tts_audio", (data) => {
   // Receive the audio URL from the server and play it
   const audioUrl = data.audio_url;

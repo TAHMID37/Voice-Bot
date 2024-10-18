@@ -152,6 +152,14 @@ body {
   text-align: center;
 }
 
+#answers {
+  color: rgb(237, 237, 242);
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  margin: 10px 0;
+  text-align: center;
+}
+
 h1 {
   font-family: "Arimo", sans-serif;
   font-size: 40px;

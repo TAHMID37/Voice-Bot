@@ -15,3 +15,4 @@ swe-labels-subcat.csv
 *.csv
 *.tar.gz
 run.py
+static/audio
