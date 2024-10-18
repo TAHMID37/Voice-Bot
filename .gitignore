@@ -1,0 +1,17 @@
+.env
+*.ipynb
+*.log
+env
+*/__pycache__\
+app/__pycache__
+__pycache__
+*.zip
+.idea
+alembic
+alembic.ini
+test*
+*.pdf
+swe-labels-subcat.csv
+*.csv
+*.tar.gz
+run.py
